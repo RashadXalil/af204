@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+.app__header__middle ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.app__header__middle ul li a {
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+}
+
+.app__header__right button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.poster {
+  width: 80px;
+  height: 120px;
+}
+#modal {
+  position: absolute;
+  top: 50%;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.active {
+  display: flex !important;
+}
+.modal__body {
+  width: 100%;
+}
+.modal__body form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.modal__body form input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+select {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  color: grey;
+}
+.cancel {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.add {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.modal__footer {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  justify-content: center;
+}
