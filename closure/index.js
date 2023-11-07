@@ -18,32 +18,32 @@
 // console.log(innerFunc.up())
 // console.log(innerFunc.down())
 
-function todos() {
-    let todos = []
-    let id = 0
-    function addTodo(todo) {
-        todos.push({ id: id, todo: todo, isComplated: false })
-        id++
-        return todos
-    }
-    function deleteTodo(id) {
-        let target = todos.find(todo => todo.id == id)
-        let indexOfTarget = todos.indexOf(target)
-        todos.splice(indexOfTarget, 1)
-        return todos
-    }
-    function complateTodo(id) {
-        let target = todos.find(todo => todo.id == id)
-        target.isComplated = !target.isComplated
-        return todos
-    }
-    return { addTodo, deleteTodo, complateTodo }
-}
+// function todos() {
+//     let todos = []
+//     let id = 0
+//     function addTodo(todo) {
+//         todos.push({ id: id, todo: todo, isComplated: false })
+//         id++
+//         return todos
+//     }
+//     function deleteTodo(id) {
+//         let target = todos.find(todo => todo.id == id)
+//         let indexOfTarget = todos.indexOf(target)
+//         todos.splice(indexOfTarget, 1)
+//         return todos
+//     }
+//     function complateTodo(id) {
+//         let target = todos.find(todo => todo.id == id)
+//         target.isComplated = !target.isComplated
+//         return todos
+//     }
+//     return { addTodo, deleteTodo, complateTodo }
+// }
 
-const todoFunctions = todos() // {addTodo,deleteTodo}
+// const todoFunctions = todos() // {addTodo,deleteTodo}
 
-console.log(todoFunctions.addTodo("ders oxumaq"))
-console.log(todoFunctions.addTodo("coxlu ders oxumaq"))
-console.log(todoFunctions.addTodo("com coxlu ders oxumaq"))
-console.log(todoFunctions.deleteTodo(0))
-console.log(todoFunctions.complateTodo(1))
+// console.log(todoFunctions.addTodo("ders oxumaq"))
+// console.log(todoFunctions.addTodo("coxlu ders oxumaq"))
+// console.log(todoFunctions.addTodo("com coxlu ders oxumaq"))
+// console.log(todoFunctions.deleteTodo(0))
+// console.log(todoFunctions.complateTodo(1))
